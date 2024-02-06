@@ -116,7 +116,7 @@ public class Дараалал<T> {
         integerQueue.printQueue();
 
 
-        
+        // 14:04
 
     }
 }
