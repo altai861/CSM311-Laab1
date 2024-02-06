@@ -18,7 +18,7 @@ public class Queue<T> {
     // Method to add an item to the queue.
     public void enqueue(T item) {
         if (isFull()) {
-            System.out.println("Queue is full. Cannot enqueue " + item);
+            System.out.println("Queue дүүрсэн байна." + item);
             return;
         }
         rear = (rear + 1) % capacity;
@@ -29,7 +29,7 @@ public class Queue<T> {
     // Method to remove an item from queue.
     public T dequeue() {
         if (isEmpty()) {
-            System.out.println("Queue is empty. Cannot dequeue.");
+            System.out.println("Queue хоосон байна.");
             return null;
         }
         T item = array[front];
@@ -41,7 +41,7 @@ public class Queue<T> {
     // Method to get the front item from the queue without removing it.
     public T peek() {
         if (isEmpty()) {
-            System.out.println("Queue is empty. No element to peek.");
+            System.out.println("Queue хоосон байна. Элемент харах боломжгүй.");
             return null;
         }
         return array[front];
@@ -65,7 +65,7 @@ public class Queue<T> {
     // Method to print the elements of the queue.
     public void printQueue() {
         if (isEmpty()) {
-            System.out.println("Queue is empty.");
+            System.out.println("Queue хоосон байна.");
             return;
         }
         System.out.print("Queue: ");
@@ -82,7 +82,7 @@ public class Queue<T> {
     
     public void printAllTheWayUp() {
     	if (isEmpty()) {
-    		System.out.println("Queue is empty.");
+    		System.out.println("Queue хоосон байна.");
     	}
     	
     	System.out.println("Queue: ");
