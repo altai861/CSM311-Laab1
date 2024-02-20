@@ -1,7 +1,7 @@
 
 
-public class Queue<T> {
-    private T[] array;
+public class Queue<G> {
+    private G[] array;
     private int front;
     private int rear;
     private int capacity;
@@ -9,14 +9,14 @@ public class Queue<T> {
 
     public Queue(int capacity) {
         this.capacity = capacity;
-        array = (T[]) new Object[capacity];
+        array = (G[]) new Object[capacity];
         front = 0;
         rear = -1;
         size = 0;
     }
 
     // Method to add an item to the queue.
-    public void enqueue(T элемент) {
+    public void enqueue(G элемент) {
         if (isFull()) {
             System.out.println("Дараалал дүүрсэн байна." + элемент);
             return;
@@ -27,19 +27,19 @@ public class Queue<T> {
     }
 
     // Method to remove an item from queue.
-    public T dequeue() {
+    public G dequeue() {
         if (isEmpty()) {
             System.out.println("Дараалал хоосон байна.");
             return null;
         }
-        T элемент = array[front];
+        G элемент = array[front];
         front = (front + 1) % capacity;
         size--;
         return элемент;
     }
 
     // Method to get the front item from the queue without removing it.
-    public T peek() {
+    public G peek() {
         if (isEmpty()) {
             System.out.println("Дараалал хоосон байна. Элемент харах боломжгүй.");
             return null;
@@ -118,7 +118,7 @@ public class Queue<T> {
 
         // 14:04
         // 14:27
-
+        
     }
 }
 
