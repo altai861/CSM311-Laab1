@@ -68,14 +68,18 @@ public class Queue<G> {
             System.out.println("Дараалал хоосон байна.");
             return;
         }
-        System.out.print("Queue: ");
+        
         int count = 0;
         int index = front;
         while (count < size) {
-            System.out.print(array[index] + " ");
+        	
+        	System.out.println((count + 1) + ". " + array[index].toString());
+        	
             index = (index + 1) % capacity;
             count++;
         }
+        
+        
         
         System.out.println();
     }
