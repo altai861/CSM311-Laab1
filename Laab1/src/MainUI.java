@@ -66,6 +66,7 @@ public class MainUI {
 				} else {
 					System.out.println("Буруу утга оруулсан байна.");
 				}
+				// 15:22
 			
 			}
 		}
